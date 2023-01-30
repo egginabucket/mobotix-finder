@@ -85,7 +85,7 @@ def main():
             continue
         options = form.find("select", {"name": "recordmult"}).find_all("option")
         cam["spf"] = max(float(opt.attrs["value"]) for opt in options)
-        if title := form.find("title"):
+        if title := soup.find("title"):
             cam["title"] = title.get_text(strip=True)
         if geo := site.get("geoinfo"):
             if country := geo.get("country") or site.get("continent"):
