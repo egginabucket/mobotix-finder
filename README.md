@@ -5,7 +5,7 @@ Mobotix camera finder using ZoomEye
 
 - Install: `pip install mobotix-finder`
 - Set `ZOOMEYE_API_KEY` or `ZOOMEYE_USERNAME` and `ZOOMEYE_PASSWORD` environment variables
-- `find-mobotix ~/Downloads/mobotix`
+- `find-mobotix mobotix`
 - For more options run `find-mobotix --help`
 
 Please use responsibly!
